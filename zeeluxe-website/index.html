@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zeeluxe Makeup Artistry | Makeup & Hair Installation</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#efebe8;--paper:#faf8f5;--card:#fff;--ink:#1f1a17;--mute:#6f655d;--line:#ddd5cc;--gold:#a67c52;--gold-l:#d9bf9b;--mocha:#2a211d;--field:#faf8f5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#171310;--card:#211b17;--ink:#f3ede6;--mute:#a99f95;--line:#3a322c;--gold:#d2ad84;--field:#171310}}
+:root[data-theme="dark"]{--paper:#171310;--card:#211b17;--ink:#f3ede6;--mute:#a99f95;--line:#3a322c;--gold:#d2ad84;--field:#171310}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--paper);color:var(--ink);font:300 17px/1.7 Jost,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.bar{position:sticky;top:0;z-index:10;background:rgba(239,235,232,.94);backdrop-filter:blur(8px);border-bottom:1px solid #ddd5cc;color:#1f1a17;padding-top:env(safe-area-inset-top,0px)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.brand{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.55rem;font-weight:600;letter-spacing:.16em;text-decoration:none}
+.bar nav{display:flex;align-items:center;gap:26px;font-size:.95rem}
+.bar nav a{text-decoration:none;color:#5a5048}
+.bar nav a:hover{color:#1f1a17}
+.btn{display:inline-block;padding:14px 30px;border:1px solid var(--gold);text-decoration:none;font:400 .98rem Jost,sans-serif;letter-spacing:.04em;cursor:pointer;background:transparent;color:inherit;border-radius:999px;transition:background .2s,color .2s}
+.btn.fill{background:var(--gold);color:#fff}
+.btn.fill:hover{background:#8d6741}
+.btn.ghost:hover{background:var(--gold);color:#fff}
+.bar .btn{padding:9px 22px;font-size:.9rem;color:#8d6741}
+.bar .btn:hover{background:var(--gold);color:#fff}
+.hero{background:var(--ivory);color:#1f1a17;text-align:center;padding:36px 0 70px}
+.hero img{width:100%;max-width:780px;height:auto;display:block;margin:0 auto}
+.hero p{font-size:1.2rem;max-width:36ch;margin:0 auto;color:#4a4039}
+.btns{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:30px}
+.hero .btn.ghost{color:#8d6741}
+.hero .btn.ghost:hover{color:#fff}
+.facts{background:var(--mocha);color:#e9dfd3}
+.facts .wrap{display:grid;grid-template-columns:repeat(3,1fr);text-align:center}
+.facts div{padding:22px 12px;font-size:.95rem;border-left:1px solid rgba(217,191,155,.25)}
+.facts div:first-child{border-left:0}
+section{padding:90px 0}
+h2{font-size:clamp(2.4rem,6vw,3.6rem);margin-bottom:14px}
+.intro{color:var(--mute);max-width:58ch;margin:0 0 44px}
+.center{text-align:center}.center .intro{margin-left:auto;margin-right:auto}
+.dark{background:var(--mocha);color:#f1e9df}
+.dark .intro{color:#bfb2a5}
+.svcs{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.svc{border:1px solid rgba(217,191,155,.35);padding:38px 34px;border-radius:4px}
+.svc h3{font-size:2.1rem;margin-bottom:6px;color:#fff}
+.svc .price{font-family:"Cormorant Garamond",Georgia,serif;font-size:2.7rem;color:var(--gold-l);line-height:1.1;margin:8px 0 16px}
+.svc .price.sm{font-size:1.9rem;padding:.55rem 0 .6rem}
+.svc p{margin:0 0 14px;color:#d9cdc0}
+.svc ul{margin:0;padding:0;list-style:none;color:#bfb2a5;font-size:.97rem}
+.svc li{padding:7px 0;border-top:1px solid rgba(217,191,155,.18)}
+.bar .brand{font-size:1.2rem;letter-spacing:.1em}
+.svc .rates li{display:flex;justify-content:space-between;align-items:baseline;font-size:1.05rem;color:#f1e9df}
+.svc .rates li span+span{color:var(--gold-l);font-family:"Cormorant Garamond",Georgia,serif;font-size:1.7rem;line-height:1.2}
+.svc .warn{margin:18px 0 0;font-size:.95rem;color:#d9cdc0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:10px;counter-reset:s}
+.step{border-top:2px solid var(--gold);padding-top:18px}
+.step h3{font-size:1.6rem;margin-bottom:6px}
+.step p{margin:0;color:var(--mute);font-size:.97rem}
+.alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+form{background:var(--paper);border:1px solid var(--line);padding:38px;display:grid;grid-template-columns:1fr 1fr;gap:20px;border-radius:6px;box-shadow:0 18px 44px -26px rgba(60,40,25,.35)}
+form .full{grid-column:1/-1}
+label{display:block;font-size:.88rem;color:var(--mute);margin-bottom:6px}
+input,select,textarea{width:100%;padding:13px 14px;font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--line);border-radius:4px}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px rgba(166,124,82,.2)}
+textarea{min-height:92px;resize:vertical}
+.note{font-size:.88rem;color:var(--mute);margin:0}
+.err{color:#b3402f;font-size:.92rem;min-height:1.2em;margin:0}
+.pol{display:grid;grid-template-columns:1fr 1fr;gap:34px 56px}
+.pol h3{font-size:1.5rem;color:var(--gold);margin-bottom:8px}
+.pol p{margin:0;color:var(--mute);font-size:.98rem}
+.pol div{border-left:2px solid var(--gold-l);padding-left:18px}
+footer{background:var(--mocha);color:#cfc3b6;text-align:center;padding:56px 24px 96px;font-size:.95rem}
+footer .brand{display:block;color:#fff;margin-bottom:10px}
+footer p{margin:4px 0}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));background:#1f9d57;color:#fff;padding:13px 22px;border-radius:999px;text-decoration:none;font-size:.95rem;z-index:20;box-shadow:0 8px 20px rgba(0,0,0,.28)}
+@media(max-width:720px){.bar .brand{font-size:.88rem;letter-spacing:.04em}.svcs,.steps,.pol,form{grid-template-columns:1fr}.facts .wrap{grid-template-columns:1fr}.facts div{border-left:0;border-top:1px solid rgba(217,191,155,.25)}.facts div:first-child{border-top:0}.bar nav a:not(.btn){display:none}form{padding:24px}section{padding:64px 0}.hero{padding-bottom:54px}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes pulse{0%{box-shadow:0 8px 20px rgba(0,0,0,.28),0 0 0 0 rgba(31,157,87,.55)}70%,100%{box-shadow:0 8px 20px rgba(0,0,0,.28),0 0 0 16px rgba(31,157,87,0)}}
+.hero img{animation:fade 1.4s ease both}
+.hero p{animation:rise .9s .5s ease both}
+.hero .btns{animation:rise .9s .8s ease both}
+.btn{transition:background .25s,color .25s,transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 20px -10px rgba(120,84,50,.6)}
+.svc{transition:border-color .3s,background .3s}
+.svc:hover{border-color:var(--gold-l);background:rgba(217,191,155,.06)}
+.wa{animation:pulse 2.8s ease-out infinite 2s}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease;transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.className+=" js"</script>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+  <a class="brand" href="#top">ZEELUXE MAKEUP ARTISTRY</a>
+  <nav><a href="#about">About us</a><a href="#services">Our services</a><a href="#how">How it works</a><a href="#policy">Policy</a><a class="btn" href="#book">Book now</a></nav>
+</div></div>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <img src="logo.jpg" alt="Zeeluxe Makeup Artistry logo" width="1000" height="667">
+  <div class="btns">
+    <a class="btn fill" href="#book">Book an appointment</a>
+    <a class="btn ghost" href="https://wa.me/27619850213?text=Hi%20Zeeluxe%2C%20I%27d%20like%20to%20make%20a%20booking." target="_blank" rel="noopener">WhatsApp 061 985 0213</a>
+  </div>
+</div></div>
+
+<div class="facts"><div class="wrap">
+  <div>Every makeup look is R250</div>
+  <div>Studio or housecall</div>
+  <div>Book directly on WhatsApp</div>
+</div></div>
+
+<section id="about"><div class="wrap center">
+  <h2>About us</h2>
+  <p class="intro" style="margin-bottom:0;font-size:1.1rem;max-width:62ch">Zeeluxe Makeup Artistry is all about enhancing your natural beauty through professional makeup artistry, creating looks that make you feel like the best version of yourself. Whether it’s for a special occasion or a moment worth celebrating, our goal is to make every experience memorable.</p>
+</div></section>
+
+<section id="services" class="dark"><div class="wrap">
+  <h2 style="margin-bottom:40px">Our services</h2>
+  <div class="svcs">
+    <div class="svc">
+      <h3>Makeup services</h3>
+      <div class="price">R250</div>
+      <p>For any look.</p>
+    </div>
+    <div class="svc">
+      <h3>Hair services</h3>
+      <ul class="rates" style="margin-top:14px"><li><span>Basic installation</span><span>R150</span></li><li><span>Wig treatment</span><span>R300</span></li></ul>
+      <p class="warn">Please note we do not install hair that is not customised or clean.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap center">
+  <h2>How booking works</h2>
+  <p class="intro">Three steps. No account, no waiting on a website.</p>
+  <div class="steps" style="text-align:left">
+    <div class="step"><h3>1. Fill in the form</h3><p>Choose your service, date and time, and describe the look or style you want.</p></div>
+    <div class="step"><h3>2. Send it on WhatsApp</h3><p>Your booking opens in WhatsApp, ready to send to Zeeluxe on 061 985 0213.</p></div>
+    <div class="step"><h3>3. Pay your deposit</h3><p>A 50% deposit secures your date. You'll get a confirmation once it's paid.</p></div>
+  </div>
+</div></section>
+
+<section id="book" class="alt"><div class="wrap">
+  <h2>Book your appointment</h2>
+  <p class="intro">Tap the button when you're done. WhatsApp opens with your booking already written. Press send to complete it.</p>
+  <form id="bf" novalidate>
+    <div><label for="name">Your name</label><input id="name" required autocomplete="name"></div>
+    <div><label for="phone">Your phone number</label><input id="phone" type="tel" required autocomplete="tel"></div>
+    <div><label for="service">Service</label>
+      <select id="service"><option>Makeup (R250)</option><option>Basic hair installation (R150)</option><option>Wig treatment (R300)</option><option>Makeup and hair service</option></select></div>
+    <div><label for="where">Where</label>
+      <select id="where"><option value="studio">At the studio</option><option value="house">Housecall (R300 callout)</option></select></div>
+    <div><label for="date">Date</label><input id="date" type="date" required></div>
+    <div><label for="time">Time</label><input id="time" type="time" required></div>
+    <div class="full" id="addrbox" hidden><label for="addr">Your address for the housecall</label><input id="addr" autocomplete="street-address"></div>
+    <div class="full"><label for="look">The look or hair style you want</label><textarea id="look" placeholder="e.g. soft glam with lashes, or a 24 inch closure sew-in"></textarea></div>
+    <p class="err full" id="err" role="alert"></p>
+    <div class="full"><button class="btn fill" type="submit">Send booking on WhatsApp</button></div>
+    <p class="note full">Bookings before 8am add R100. Housecalls need two days' notice.</p>
+  </form>
+</div></section>
+
+<section id="policy"><div class="wrap">
+  <h2>Policy &amp; terms</h2>
+  <p class="intro">By confirming your booking, you agree to the terms below.</p>
+  <div class="pol">
+    <div><h3>Deposit</h3><p>A 50% deposit is required to secure your booking. Deposits are non-refundable. If you cancel, your deposit is kept as a cancellation fee.</p></div>
+    <div><h3>Early appointments</h3><p>A R100 fee applies to appointments before 8am.</p></div>
+    <div><h3>Arriving on time</h3><p>Please arrive on time. A 15 minute grace period is allowed. If you are later and have not communicated, your appointment will be cancelled.</p></div>
+    <div><h3>Housecalls</h3><p>Book at least two days in advance. The callout is R300 and may change depending on where you live.</p></div>
+    <div><h3>Your visit</h3><p>Please avoid coming with infants or toddlers. You may bring one person with you, no more.</p></div>
+  </div>
+</div></section>
+</main>
+
+<footer>
+  <span class="brand">ZEELUXE</span>
+  <p>Makeup Artistry &amp; Hair Installation</p>
+  <p>Call or WhatsApp <a href="tel:+27619850213">061 985 0213</a> for the physical address.</p>
+  <p style="margin-top:26px;padding-top:20px;border-top:1px solid rgba(217,191,155,.25);font-size:.85rem">&copy; 2026 Zeeluxe Makeup Artistry. All rights reserved.</p>
+  <p style="font-size:.85rem">Website designed by <a href="https://hlelani-group-website.vercel.app/" target="_blank" rel="noopener" style="color:#d9bf9b">Hlelani Group</a></p>
+</footer>
+
+<a class="wa" href="https://wa.me/27619850213?text=Hi%20Zeeluxe%2C%20I%27d%20like%20to%20make%20a%20booking." target="_blank" rel="noopener">Book on WhatsApp</a>
+
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var items=document.querySelectorAll("section h2,.intro,.facts div,.svc,.step,.pol>div,form");
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.15,rootMargin:"0px 0px -40px 0px"});
+    items.forEach(function(el,i){var sibs=el.parentNode.children,n=Array.prototype.indexOf.call(sibs,el);el.classList.add("rv");el.style.setProperty("--d",(Math.min(n,4)*0.12)+"s");io.observe(el)});
+  }
+  var d=$("date"),t=new Date();
+  d.min=t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0");
+  $("where").addEventListener("change",function(){$("addrbox").hidden=this.value!=="house"});
+  $("bf").addEventListener("submit",function(e){
+    e.preventDefault();
+    var err=$("err"),house=$("where").value==="house";
+    if(!$("name").value.trim()||!$("phone").value.trim()||!d.value||!$("time").value){err.textContent="Please fill in your name, phone number, date and time.";return}
+    if(house){
+      var days=(new Date(d.value+"T00:00")-new Date(t.getFullYear(),t.getMonth(),t.getDate()))/864e5;
+      if(days<2){err.textContent="Housecalls must be booked at least two days in advance. Please pick a later date.";return}
+      if(!$("addr").value.trim()){err.textContent="Please add your address for the housecall.";return}
+    }
+    err.textContent="";
+    var early=$("time").value<"08:00";
+    var m="*New booking request - Zeeluxe*\n"+
+      "Name: "+$("name").value.trim()+"\n"+
+      "Phone: "+$("phone").value.trim()+"\n"+
+      "Service: "+$("service").value+"\n"+
+      "Date: "+d.value+"\nTime: "+$("time").value+"\n"+
+      "Where: "+(house?"Housecall - "+$("addr").value.trim():"Studio")+"\n"+
+      "Look/style: "+($("look").value.trim()||"Not specified")+
+      (early?"\nNote: before 8am (R100 fee applies)":"")+
+      (house?"\nNote: housecall callout R300":"")+
+      "\nI agree to the policy and terms.";
+    window.open("https://wa.me/27619850213?text="+encodeURIComponent(m),"_blank");
+  });
+})();
+</script>
+</body>
+</html>
